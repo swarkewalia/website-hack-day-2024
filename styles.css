@@ -3,5 +3,10 @@ h1 {
 }
 
 p {
-    color:blueviolet;
+    color:rgb(90, 16, 160);
 }
+
+nav {
+    background-color: rgb(6, 56, 6);
+}
+
