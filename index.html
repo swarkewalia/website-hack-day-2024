@@ -10,26 +10,59 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="logo" >SK</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a href = "experience.html" class="nav-item nav-link" href="#">Experience</a>
-          <a class="nav-item nav-link" href="#">Projects</a>
-          <a class="nav-item nav-link" href="#">Skills</a>
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="projects.html">Projects</a>
+          <a class="nav-link" href="skills.html">Skills</a>
         </div>
       </div>
     </nav>
   </head>
   <body>
-    <main>
-        <h1>Hi! I'm Swar Kewalia.</h1> 
-        <p>BS Computer Science</p>
-    </main>
-	<script src="index.js"></script>
+    <section id="home">
+      <div class="section__pic-container">
+        <img src="./assets/IMG_6961.jpeg" alt="Swar Kewalia profile picture">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">
+          Hello, I'm
+        </p>
+        <h1 class="title"> Swar Kewalia</h1>
+        <p class="section__text__p2"> Software Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/currentresume.pdf')">Download Resume</button>
+        </div>
+        <div id = "socials-container"> 
+          <img src="./assets/download (4).png" alt="My LinkedIn Profile"
+          class="icon" onClick="location.href='https://linkedin.com/in/swar-kewalia-271a19292'">
+          <img src="./assets/download (5).png" alt="My Github Profile"
+          class="icon" onClick="location.href='https://github.com/swarkewalia'">
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title"> About Me! </h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/IMG_6961.jpeg" alt="profile picture" class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/download (4).png" alt="experience icon" class="icon">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src ="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" 
